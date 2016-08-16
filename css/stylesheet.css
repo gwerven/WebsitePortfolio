@@ -68,3 +68,8 @@ iframe
     margin: 0 auto;
     display: block;
 }
+
+p
+{
+    font-size: 25px;
+}
