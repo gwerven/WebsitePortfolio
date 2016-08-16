@@ -21,6 +21,11 @@
     font-size: 20px;
 }
 
+#jumbotronpindex
+{
+    font-size: 28px;
+}
+
 #asterisks
 {
     color: #18bc9c;
@@ -67,9 +72,4 @@ iframe
 {
     margin: 0 auto;
     display: block;
-}
-
-p
-{
-    font-size: 25px;
 }
