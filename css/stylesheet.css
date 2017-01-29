@@ -73,3 +73,9 @@ iframe
     margin: 0 auto;
     display: block;
 }
+
+@font-face{
+    font-family:"CODE";
+    src: url('CODE Light.otf'),
+    url('CODE Light.otf');
+}
