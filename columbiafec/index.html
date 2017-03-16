@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Home - Columbia FEC</title>
+	<link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="icon" href="res/images/logo.png">
+	<script src="js/patternizer.js"></script>
+	<script src="js/jquery.ba-throttle-debounce.1.1.min.js"></script>
+	<style type="text/css">
+	<!--
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 20px;
+		}
+		h2 {
+			margin: 40px 0 15px 0;
+		}
+        a {
+            text-decoration: none;
+            color: #0666ce;
+        }
+		code {
+			font-weight: bold;
+		}
+		#bgCanvas {
+			position: fixed;
+		}
+		.wrapper {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+		}
+		.content-wrapper {
+			width: 920px;
+			margin: 40px auto;
+			padding: 30px;
+			background-color: #fff;
+		}
+		-->
+	</style>
+</head>
+<body>
+	<canvas id="bgCanvas"></canvas>
+	<div class="wrapper">
+		<div class="content-wrapper" style="text-align: center">
+            <h1 style="color: #00369f"><a href="index.html"><img src="res/images/logo.png" width="97" height="80" alt="Logo"/></a> Columbia Family Entertainment Center</h1>
+            <h1><a href="index.html">Home</a> | <a href="activities.html">Activities</a> | <a href="packages.html">Packages</a> | <a href="reservations.html">Reservations</a> | <a href="contact.html">Contact</a></h1>
+            <marquee bgcolor="green" behavior="alternate"><span style="color: gold">Limited Time Offer: 20% off all packages and reservations with coupon code "STPATRICKS2017"</span></marquee>
+            <div align="center">
+		<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FColumbia-Family-Entertainment-Center-375601056136623%2F%3Fskip_nax_wizard%3Dtrue&width=320&layout=standard&action=like&size=large&show_faces=false&share=true&height=35&appId" width="320" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <div display="inline-block" align="center" class="w3-content w3-section" style="max-width:900px">
+                    <img class="mySlides" src="res/images/audience.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/bowlingalley3.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/bowlingpins.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/bumpercarts2.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/columbiacity.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/columbiaskyline2.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/columbiaskyline3.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/columbiaskyline4.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/concertstage.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/lasertagarena.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/lasertagequipment.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/minigolfcourse.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/minigolfequipment.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/snackbar.jpg" style="width:100%">
+                    <img class="mySlides" src="res/images/snackbarsign.jpg" style="width:100%">
+                </div>
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                function carousel(){
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++){x[i].style.display = "none";}
+                    myIndex++;
+                    if(myIndex > x.length){myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000);}
+            </script>
+            <p>The Columbia Family Entertainment Center is the premier venue for family fun in the city of Columbia, South Carolina. Use this website to learn more about the <a href="activities.html">activities</a> and party <a href="packages.html">packages</a> that we offer, make <a href="reservations.html">reservations</a>, or <a href="contact.html">contact</a> us.</p>
+            <p>Operating Hours: Thursday-Sunday 10AM-10PM</p>
+            <p>&copy; 2016 Columbia Family Entertainment Center</p>
+		</div>
+	</div>
+	<script>
+		var bgCanvas = document.getElementById('bgCanvas');
+		function render()
+		{
+			bgCanvas.patternizer({
+		stripes : [ 
+			{
+				color: '#0666ce',
+				rotation: 45,
+				opacity: 90,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 53
+			},
+			{
+				color: '#000000',
+				rotation: 45,
+				opacity: 75,
+				mode: 'normal',
+				width: 4,
+				gap: 90,
+				offset: 56
+			},
+			{
+				color: '#000308',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 52
+			},
+			{
+				color: '#00050f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 48
+			},
+			{
+				color: '#00091a',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 44
+			},
+			{
+				color: '#000c24',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 40
+			},
+			{
+				color: '#001133',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 36
+			},
+			{
+				color: '#00153f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 32
+			},
+			{
+				color: '#001a4c',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 28
+			},
+			{
+				color: '#001e59',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 24
+			},
+			{
+				color: '#00256e',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 20
+			},
+			{
+				color: '#002b81',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 16
+			},
+			{
+				color: '#00369f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 12
+			},
+			{
+				color: '#0040bf',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 8
+			},
+			{
+				color: '#004adb',
+				rotation: 45,
+				opacity: 80,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 4
+			},
+			{
+				color: '#0769ce',
+				rotation: 45,
+				opacity: 100,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 0
+			},
+			{
+				color: '#0769ce',
+				rotation: 45,
+				opacity: 100,
+				mode: 'plaid',
+				width: 3,
+				gap: 1,
+				offset: 0
+			}
+		],
+		bg : '#ffffff'
+		}); 
+		}
+		function onResize()
+		{
+			var buffer = 100;
+			if (bgCanvas.width - window.innerWidth < buffer || bgCanvas.height - window.innerHeight < buffer)
+				{
+					bgCanvas.width = window.innerWidth + (buffer * 2);
+					bgCanvas.height = window.innerHeight + (buffer * 2);
+					render();
+				}
+		}
+		function init()
+		{
+			onResize();
+			window.addEventListener('resize', Cowboy.throttle(200, onResize), false);
+		}
+		init();
+	</script>
+</body>
+</html>

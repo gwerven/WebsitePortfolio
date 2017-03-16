@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Home - Columbia FEC</title>
+	<link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="icon" href="res/images/logo.png">
+	<script src="js/patternizer.js"></script>
+	<script src="js/jquery.ba-throttle-debounce.1.1.min.js"></script>
+	<style type="text/css">
+	<!--
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 20px;
+		}
+		h2 {
+			margin: 40px 0 15px 0;
+		}
+        a {
+            text-decoration: none;
+            color: #0666ce;
+        }
+		code {
+			font-weight: bold;
+		}
+		#bgCanvas {
+			position: fixed;
+		}
+		.wrapper {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+		}
+		.content-wrapper {
+			width: 920px;
+			margin: 40px auto;
+			padding: 30px;
+			background-color: #fff;
+		}
+		-->
+	</style>
+</head>
+<body>
+	<canvas id="bgCanvas"></canvas>
+	<div class="wrapper">
+		<div class="content-wrapper" style="text-align: center">
+            <h1 style="color: #00369f"><a href="index.html"><img src="res/images/logo.png" width="97" height="80" alt="Logo"/></a> Columbia Family Entertainment Center</h1>
+            <h1><a href="index.html">Home</a> | <a href="activities.html">Activities</a> | <a href="packages.html">Packages</a> | <a href="reservations.html">Reservations</a> | <a href="contact.html">Contact</a></h1>
+            <h1>Menu</h1>
+            <p>Our snack bar has some tasty treats for guests! Look through the menu below to see what we have to offer.</p>
+            <table align="center" border="0" bgcolor="white">
+                <tr>
+                    <td><h2>Item</h2></td>
+                    <td><h2>Description</h2></td>
+                    <td><h2>Price</h2></td>
+                </tr>
+                <tr>
+                    <td><h2>Hot Dog</h2><img src="res/images/hotdog.jpg" width="133" height="80" alt="Hotdog"></td>
+                    <td><p>We serve classic hot dogs with an assortment of condiments to choose from including ketchup, mustard, relish, onions, cheese, and chili.</p></td>
+                    <td><p>$1.99</p></td>
+                </tr>
+                <tr>
+                    <td><h2>Hamburger</h2><img src="res/images/hamburger.png" width="120" height="80" alt="Hotdog"></td>
+                    <td><p>Who doesn't enjoy a hamburger? Again, we also have a large array of condiments to choose from including bacon, cheddar cheese, lettuce, ketchup, onions, tomatoes, mayonnaise, dill pickles, etc.</p></td>
+                    <td><p>$1.99</p></td>
+                </tr>
+                <tr>
+                    <td><h2>Pizza Slice</h2><img src="res/images/pizza.jpg" width="120" height="80" alt="Hotdog"></td>
+                    <td><p>Enjoy a warm homemade slice of the pizza we're known for. We have options for toppings such as pepperoni, sausage, pineapple, bacon, ham, spinach, garlic, and peppers.</p></td>
+                    <td><p>$2.99</p></td>
+                </tr>
+                <tr>
+                    <td><h2>Chips</h2><img src="res/images/chips.jpg" width="139" height="80" alt="Hotdog"></td>
+                    <td><p>So good you can't eat just one! We have regular, barbecue, salt and vinegar, pretzels, and Cheetos among others.</p></td>
+                    <td><p>$0.99</p></td>
+                </tr>
+                <tr>
+                    <td><h2>Soda</h2><img src="res/images/soda.jpg" width="54" height="80" alt="Hotdog"></td>
+                    <td><p>We have all your favorite sodas from Coca-Cola and Fanta to Dr. Pepper and Sprite. You want it, we have it!</p></td>
+                    <td><p>$0.99</p></td>
+                </tr>
+                <tr>
+                    <td><h2>Smoothie</h2><img src="res/images/smoothie.jpg" width="107" height="80" alt="Hotdog"></td>
+                    <td><p>You'll love our fruit smoothies! You can choose from strawberry banana, wild berry, and mango pineapple.</p></td>
+                    <td><p>$1.99</p></td>
+                </tr>
+            </table>
+            <p>&copy; 2016 Columbia Family Entertainment Center</p>
+		</div>
+	</div>
+	<script>
+		var bgCanvas = document.getElementById('bgCanvas');
+		function render()
+		{
+			bgCanvas.patternizer({
+		stripes : [ 
+			{
+				color: '#0666ce',
+				rotation: 45,
+				opacity: 90,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 53
+			},
+			{
+				color: '#000000',
+				rotation: 45,
+				opacity: 75,
+				mode: 'normal',
+				width: 4,
+				gap: 90,
+				offset: 56
+			},
+			{
+				color: '#000308',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 52
+			},
+			{
+				color: '#00050f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 48
+			},
+			{
+				color: '#00091a',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 44
+			},
+			{
+				color: '#000c24',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 40
+			},
+			{
+				color: '#001133',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 36
+			},
+			{
+				color: '#00153f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 32
+			},
+			{
+				color: '#001a4c',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 28
+			},
+			{
+				color: '#001e59',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 24
+			},
+			{
+				color: '#00256e',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 20
+			},
+			{
+				color: '#002b81',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 16
+			},
+			{
+				color: '#00369f',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 12
+			},
+			{
+				color: '#0040bf',
+				rotation: 45,
+				opacity: 75,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 8
+			},
+			{
+				color: '#004adb',
+				rotation: 45,
+				opacity: 80,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 4
+			},
+			{
+				color: '#0769ce',
+				rotation: 45,
+				opacity: 100,
+				mode: 'plaid',
+				width: 4,
+				gap: 90,
+				offset: 0
+			},
+			{
+				color: '#0769ce',
+				rotation: 45,
+				opacity: 100,
+				mode: 'plaid',
+				width: 3,
+				gap: 1,
+				offset: 0
+			}
+		],
+		bg : '#ffffff'
+		}); 
+		}
+		function onResize()
+		{
+			var buffer = 100;
+			if (bgCanvas.width - window.innerWidth < buffer || bgCanvas.height - window.innerHeight < buffer)
+				{
+					bgCanvas.width = window.innerWidth + (buffer * 2);
+					bgCanvas.height = window.innerHeight + (buffer * 2);
+					render();
+				}
+		}
+		function init()
+		{
+			onResize();
+			window.addEventListener('resize', Cowboy.throttle(200, onResize), false);
+		}
+		init();
+	</script>
+</body>
+</html>
