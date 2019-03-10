@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Inconsolata;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/inconsolata/inconsolata_n7.0a87d079ac2da20af27cc28c0c9ef33b52907868.woff2?h1=c2hvcGxvY2FsdGhyZWFkcy5jb20&hmac=9bf7e42a2e881a6d05eac35f6d16ac383fd55a4cc218377dedabd3b35eb2ac16") format("woff2"),
+       url("https://fonts.shopifycdn.com/inconsolata/inconsolata_n7.0d90d616d07053f46db04d4896a963d8c39c8482.woff?h1=c2hvcGxvY2FsdGhyZWFkcy5jb20&hmac=85e2fa95b5952f5b15f78722f063db097910aed0316fe328f699d4a87367aafb") format("woff");
+}
