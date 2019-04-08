@@ -1,2 +1,2 @@
 # WebsitePortfolio
-A professional website portfolio for Garrett Erven including accolades, projects, resources, social media and contact information.
+Garrett Erven is a college student and web developer for hire based in the Carolinas.
